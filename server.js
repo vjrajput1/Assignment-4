@@ -1,5 +1,5 @@
 /********************************************************************************* 
- *  WEB700 – Assignment 03 
+ *  WEB700 – Assignment 04
  *  I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part 
  *  of this assignment has been copied manually or electronically from any other source 
  *  (including 3rd party web sites) or distributed to other students. 
@@ -17,8 +17,8 @@ var path = require("path");
 const collegeData = require("./modules/collegeData");
 
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public'));
-app.use(express.static('views'));
+app.use(express.static('Public'));
+//app.use(express.static('views'));
 
 // GET route for /students/add
 app.get('/students/add', (req, res) => {
